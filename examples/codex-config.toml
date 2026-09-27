@@ -1,0 +1,4 @@
+# ~/.codex/config.toml
+[mcp_servers.fieldproxy]
+url = "https://api-us-east-1.fieldproxy.ai/mcp"
+bearer_token_env_var = "FIELDPROXY_MCP_KEY"

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Fieldproxy/fieldproxy-mcp",
+  "title": "Fieldproxy",
+  "description": "Field service management: jobs, dispatch, invoices, quotes and building apps, confirm before change.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.fieldproxy.ai/mcp",
+  "repository": {
+    "url": "https://github.com/Fieldproxy/fieldproxy-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api-us-east-1.fieldproxy.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional 'Bearer fpmcp.\u2026' key for the US East region. Omit to sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api-canada.fieldproxy.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional 'Bearer fpmcp.\u2026' key for the Canada region. Omit to sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api-india-1.fieldproxy.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional 'Bearer fpmcp.\u2026' key for the India region. Omit to sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api-norway.fieldproxy.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional 'Bearer fpmcp.\u2026' key for the Norway region. Omit to sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api-nz.fieldproxy.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional 'Bearer fpmcp.\u2026' key for the New Zealand region. Omit to sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    { "type": "promptString", "id": "fieldproxy-key", "description": "Fieldproxy MCP key", "password": true }
+  ],
+  "servers": {
+    "fieldproxy": {
+      "type": "http",
+      "url": "https://api-us-east-1.fieldproxy.ai/mcp",
+      "headers": { "Authorization": "Bearer ${input:fieldproxy-key}" }
+    }
+  }
+}
