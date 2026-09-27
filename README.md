@@ -1,5 +1,7 @@
 # Fieldproxy MCP server
 
+[![Fieldproxy MCP connector – tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/io.github.Fieldproxy/fieldproxy-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.Fieldproxy/fieldproxy-mcp)
+
 The official [Model Context Protocol](https://modelcontextprotocol.io) server for [Fieldproxy](https://www.fieldproxy.ai), AI-native field service management.
 
 It lets the AI assistant your team already uses (Claude, ChatGPT, Microsoft 365 Copilot and Teams, GitHub Copilot, Cursor, OpenAI Codex, Claude Code, or any MCP client) read and change a Fieldproxy workspace, and build on it, with a person confirming every change.
