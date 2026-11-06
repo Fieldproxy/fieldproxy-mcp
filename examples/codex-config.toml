@@ -1,4 +1,12 @@
 # ~/.codex/config.toml
-[mcp_servers.fieldproxy]
-url = "https://api-us-east-1.fieldproxy.ai/mcp"
-bearer_token_env_var = "FIELDPROXY_MCP_KEY"
+
+# The public read-only sandbox (sample HVAC company, made-up data).
+[mcp_servers.fieldproxy-sandbox]
+url = "https://api-uk.fieldproxy.ai/mcp"
+http_headers = { "Authorization" = "Bearer fpmcp.eleqia.pZWm5OR4qsYqP1Wb0DKsxm9bfs_vdI-DCHL5JJMPlxc" }
+
+# Your own workspace. Use your region's address, then:
+#   export FIELDPROXY_MCP_KEY="fpmcp.YOUR_KEY"
+# [mcp_servers.fieldproxy]
+# url = "https://api-us-east-1.fieldproxy.ai/mcp"
+# bearer_token_env_var = "FIELDPROXY_MCP_KEY"

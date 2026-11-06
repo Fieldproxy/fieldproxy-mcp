@@ -1,7 +1,7 @@
 name: Publish to MCP Registry
+# Manual only. Publish @fieldproxy/mcp to npm first: the registry checks that
+# the npm package exists and that its package.json mcpName matches server.json.
 on:
-  push:
-    tags: ["v*"]
   workflow_dispatch:
 permissions:
   id-token: write

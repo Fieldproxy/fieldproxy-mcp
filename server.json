@@ -3,12 +3,38 @@
   "name": "io.github.Fieldproxy/fieldproxy-mcp",
   "title": "Fieldproxy",
   "description": "Field service management: jobs, dispatch, invoices, quotes and building apps, confirm before change.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "websiteUrl": "https://www.fieldproxy.ai/mcp",
   "repository": {
     "url": "https://github.com/Fieldproxy/fieldproxy-mcp",
     "source": "github"
   },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@fieldproxy/mcp",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FIELDPROXY_MCP_URL",
+          "description": "Your workspace's MCP address, e.g. https://api-us-east-1.fieldproxy.ai/mcp. Leave unset to use the public read-only sandbox.",
+          "isRequired": false,
+          "format": "string"
+        },
+        {
+          "name": "FIELDPROXY_MCP_KEY",
+          "description": "An fpmcp.… key from Settings, AI assistant, New key. Leave unset to use the public read-only sandbox.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
@@ -16,7 +42,7 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Optional 'Bearer fpmcp.\u2026' key for the US East region. Omit to sign in with OAuth.",
+          "description": "Optional 'Bearer fpmcp.…' key for the US East region. Omit to sign in with OAuth.",
           "isRequired": false,
           "isSecret": true
         }
@@ -28,7 +54,19 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Optional 'Bearer fpmcp.\u2026' key for the Canada region. Omit to sign in with OAuth.",
+          "description": "Optional 'Bearer fpmcp.…' key for the Canada region. Omit to sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api-uk.fieldproxy.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional 'Bearer fpmcp.…' key for the UK region. Omit to sign in with OAuth. The public read-only sandbox also lives here; its key is in the README.",
           "isRequired": false,
           "isSecret": true
         }
@@ -40,7 +78,7 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Optional 'Bearer fpmcp.\u2026' key for the India region. Omit to sign in with OAuth.",
+          "description": "Optional 'Bearer fpmcp.…' key for the India region. Omit to sign in with OAuth.",
           "isRequired": false,
           "isSecret": true
         }
@@ -52,7 +90,7 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Optional 'Bearer fpmcp.\u2026' key for the Norway region. Omit to sign in with OAuth.",
+          "description": "Optional 'Bearer fpmcp.…' key for the Norway region. Omit to sign in with OAuth.",
           "isRequired": false,
           "isSecret": true
         }
@@ -64,7 +102,7 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Optional 'Bearer fpmcp.\u2026' key for the New Zealand region. Omit to sign in with OAuth.",
+          "description": "Optional 'Bearer fpmcp.…' key for the New Zealand region. Omit to sign in with OAuth.",
           "isRequired": false,
           "isSecret": true
         }

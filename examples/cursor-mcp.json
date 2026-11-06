@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "fieldproxy-sandbox": {
+      "url": "https://api-uk.fieldproxy.ai/mcp",
+      "headers": { "Authorization": "Bearer fpmcp.eleqia.pZWm5OR4qsYqP1Wb0DKsxm9bfs_vdI-DCHL5JJMPlxc" }
+    },
     "fieldproxy": {
       "url": "https://api-us-east-1.fieldproxy.ai/mcp",
       "headers": { "Authorization": "Bearer fpmcp.YOUR_KEY" }

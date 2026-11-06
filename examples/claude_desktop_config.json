@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "fieldproxy-sandbox": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api-uk.fieldproxy.ai/mcp",
+        "--header",
+        "Authorization:${FIELDPROXY_AUTH}"
+      ],
+      "env": {
+        "FIELDPROXY_AUTH": "Bearer fpmcp.eleqia.pZWm5OR4qsYqP1Wb0DKsxm9bfs_vdI-DCHL5JJMPlxc"
+      }
+    }
+  }
+}
